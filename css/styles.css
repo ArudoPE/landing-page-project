@@ -175,25 +175,25 @@ body {
 }
 
 .main-info--container .main-info-cards--container .card {
-    min-width: 400px;
+    min-width: 325px;
     min-height: 200px;
     text-align: center;
     color: var(--primary-dark-bg-color);
-    box-shadow: 2px 2px 14px 0px;
+    box-shadow: -1px 2px 11px 0px;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
 }
 
 .main-info--container .main-info-cards--container .card .img-container {
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     min-height: 220px;
 }
 
 .main-info--container .main-info-cards--container .card .img1 {
     background-image: url('../assets/img/portfolio1.png');
-    position: relative;
-    bottom: 2px;
-    z-index: -1;
 }
 
 .main-info--container .main-info-cards--container .card .img2 {
@@ -227,6 +227,16 @@ body {
     background-color: #0f61dd;
     transition-duration: 0.2s;
 }
+
+/* Main Portfolio Cards animation*/
+
+.main-info--container .main-info-cards--container .card:hover,
+.main-info--container .main-info-cards--container .card:active {
+    transform: scale(1.05);
+    transition-duration: 0.3s;
+    font-weight: bold;
+}
+
 /*3. FOOTER*/
 
 .footer {
@@ -235,6 +245,14 @@ body {
 }
 
 /*MEDIA QUERIES*/
+
+@media (min-width: 1600px) {
+        /*2.2. MAIN PORTFOLIO*/
+
+        .main-info--container .main-info-cards--container .card {
+            min-width: 360px;
+        }
+}
 
 @media (max-width: 1024px) {
 
@@ -257,6 +275,12 @@ body {
     .main-hero--container .hero-introduction--container button {
         align-self: center;
     }
+
+        /*2.2. MAIN PORTFOLIO*/
+
+        .main-info--container .main-info-cards--container .card {
+            min-width: 290px;
+        }
 }
 
 @media (max-width: 800px) {
