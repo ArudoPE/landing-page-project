@@ -241,9 +241,70 @@ body {
 
 .main-quote--container .quote-author--container {
     font-size: 18px;
+    font-weight: bold;
 }
 
 /*2.4. MAIN CTA*/
+
+.main-cta--container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-cta--container  .contact-info--container {
+    background-color: var(--button-cta-bg-color);
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.main-cta--container  .contact-info--container .cta-title--container {
+    color: var(--white-text-color);
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.main-cta--container .contact-info--container p {
+    font-size: 18px;
+    color: var(--white-text-color);
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.main-cta--container .cta-icons--container {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.main-cta--container .cta-icon--container {
+    min-height: 45px;
+    min-width: 45px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    filter: invert(1);
+}
+
+.main-cta--container .cta-icons--container .github-icon {
+    background-image: url('../assets/icons/433-github.svg');
+}
+
+.main-cta--container .cta-icons--container .linkedin-icon {
+    background-image: url('../assets/icons/458-linkedin.svg');
+}
+
+.main-cta--container .cta-icons--container .twitter-icon {
+    background-image: url('../assets/icons/407-twitter.svg');
+}
+
+.main-cta--container .cta-icons--container .email-icon {
+    background-image: url('../assets/icons/388-mail.svg');
+}
 
 /*Main Hero Button animation*/
 
@@ -260,6 +321,14 @@ body {
     transform: scale(1.05);
     transition-duration: 0.3s;
     font-weight: bold;
+}
+
+/* Main CTA Icons animation */
+
+.main-cta--container .cta-icon--container:hover,
+.main-cta--container .cta-icon--container:active {
+    transform: scale(1.1);
+    transition-duration: 0.3s;
 }
 
 /*3. FOOTER*/
@@ -320,6 +389,32 @@ body {
 
     .main-quote--container .quote-author--container {
         font-size: 16px;
+    }
+
+    /*2.4. MAIN CTA*/
+
+    .main-cta--container  .contact-info--container {
+        flex-direction: column;
+    }
+
+    .main-cta--container  .contact-info--container .cta-title--container {
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .main-cta--container .contact-info--container p {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .main-cta--container .cta-icons--container {
+        gap: 20px;
+    }
+
+    .main-cta--container .cta-icon--container {
+        min-height: 35px;
+        min-width: 35px;
     }
 
 }
