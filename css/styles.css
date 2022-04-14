@@ -57,7 +57,7 @@ body {
 
 .header .nav {
     justify-content: space-between;
-    padding: 15px 150px;
+    padding: 15px 200px;
 }
 
 .header .nav .header-logo-container a {
@@ -101,7 +101,7 @@ body {
 .main-info--container,
 .main-quote--container,
 .main-cta--container {
-    padding: 15px 150px;
+    padding: 15px 200px;
     width: 100%;
     display: flex;
 }
@@ -110,8 +110,9 @@ body {
 
 .main-hero--container {
     background-color: var(--primary-dark-bg-color);
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    gap: 100px;
 }
 
 .main-hero--container .hero-introduction--container {
@@ -216,9 +217,33 @@ body {
     background-image: url('../assets/img/portfolio6.png');
 }
 
-.main-info--container .main-info-cards--container .card p {
-    /*background-color: rgb(0, 0, 0,0.2);*/
+/*2.3. MAIN QUOTE*/
+.main-quote--container {
+    margin-top: 20px;
+    background-color: var(--secondary-grey-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 250px;
+    gap: 10px;
 }
+
+.main-quote--container .quote-text--container,
+.main-quote--container .quote-author--container {
+    color: var(--primary-dark-bg-color);
+    font-family: italic;
+}
+
+.main-quote--container .quote-text--container {
+    font-size: 36px;
+}
+
+.main-quote--container .quote-author--container {
+    font-size: 18px;
+}
+
+/*2.4. MAIN CTA*/
 
 /*Main Hero Button animation*/
 
@@ -250,7 +275,7 @@ body {
         /*2.2. MAIN PORTFOLIO*/
 
         .main-info--container .main-info-cards--container .card {
-            min-width: 360px;
+            min-width: 365px;
         }
 }
 
@@ -263,6 +288,7 @@ body {
     .main-hero--container {
         flex-direction: column;
         text-align: center;
+        gap: 10px;
     }
 
     .main-hero--container .hero-img--container {
@@ -276,11 +302,26 @@ body {
         align-self: center;
     }
 
-        /*2.2. MAIN PORTFOLIO*/
+    /*2.2. MAIN PORTFOLIO*/
 
-        .main-info--container .main-info-cards--container .card {
-            min-width: 290px;
-        }
+    .main-info--container .main-info-cards--container .card {
+        min-width: 290px;
+    }
+
+    /*2.3. MAIN QUOTE*/
+
+    .main-quote--container {
+        padding: 50px 150px;
+    }
+
+    .main-quote--container .quote-text--container {
+        font-size: 24px;
+    }
+
+    .main-quote--container .quote-author--container {
+        font-size: 16px;
+    }
+
 }
 
 @media (max-width: 800px) {
@@ -312,7 +353,6 @@ body {
     .main-hero--container {
         justify-content: space-around;
         align-items: center;
-        gap: 10px;
     }
 
     .main-hero--container .hero-introduction--container {
@@ -327,5 +367,10 @@ body {
     .main-hero--container .hero-introduction--container p,
     .main-hero--container .hero-introduction--container button {
         font-size: 16px;
+    }
+    /*2.3. MAIN QUOTE*/
+
+    .main-quote--container {
+        padding: 35px 40px;
     }
 }
